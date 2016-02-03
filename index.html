@@ -1,0 +1,719 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=8">
+  <!--[if lt IE 8]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+  <title>MeekroDB -- The Simple PHP MySQL Library</title>
+  
+  <link type="text/css" href="./styles/jquery-ui-1.8.9.custom.css" rel="Stylesheet">  
+  <link type="text/css" rel="stylesheet" href="./styles/shCoreDefault.css"> 
+  
+  <link rel="stylesheet" href="./styles/screen.css" type="text/css" media="screen, projection"> 
+  <link rel="stylesheet" href="./styles/print.css" type="text/css" media="print">
+  <link rel="stylesheet" href="./styles/screen(1).css" type="text/css" media="screen, projection">
+  
+  <link rel="stylesheet" href="./styles/main.css" type="text/css" media="screen, projection">
+  
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="./styles/jquery-1.5.min.js"></script>
+  <script type="text/javascript" src="./styles/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="./styles/jquery.easing.compatibility.js"></script>
+  <script type="text/javascript" src="./styles/shCore.js"></script> 
+  <script type="text/javascript" src="./styles/shBrushPhp.js"></script> 
+  
+  <script type="text/javascript" src="./styles/jquery-ui-1.8.9.custom.min.js"></script>
+  <script type="text/javascript" src="./styles/jquery.lavalamp-1.3.5.min.js"></script>
+  
+</head><body>
+
+<div class="container ui-corner-all">
+  <div id="titlebar">
+    <div class="title">
+      <h1 class="alt">MeekroDB</h1>
+      <h6 class="caps">The Simple PHP MySQL Library</h6>
+    </div>
+    
+    <div class="abovelinks">
+      <a href="http://meekro.com/download_page.php" class="download_button small nomargin ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary" role="button"><span class="ui-button-icon-primary ui-icon ui-icon-folder-collapsed"></span><span class="ui-button-text">Download MeekroDB 2.3 PHP Library</span></a>
+    </div>
+    
+    <p class="clearfix clear nomargin">&nbsp;
+  </p></div>
+  
+  
+  <div id="body">
+        
+    
+  
+
+
+<h1 class="alt">Documentation</h1>
+<p>If you're trying to get started for the first time,
+read the <a href="http://meekro.com/quickstart.php">Quick Start Guide</a> first!</p>
+
+<table>
+  <tbody><tr>
+          <th>Variables</th>
+          <th>Query</th>
+          <th>Regarding Last Query</th>
+          <th>Other</th>
+      </tr>
+
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_variables">DB::$user</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_query">DB::query()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_insertid">DB::insertId()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_debugmode">DB::debugMode()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_variables">DB::$password</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryfirstrow">DB::queryFirstRow()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_count">DB::count()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_usedb">DB::useDB()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_variables">DB::$dbName</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryfirstlist">DB::queryFirstList()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_affectedrows">DB::affectedRows()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_transaction">DB::startTransaction()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_variables">DB::$host</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryfirstcolumn">DB::queryFirstColumn()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_transaction">DB::commit()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_variables">DB::$port</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryonecolumn">DB::queryOneColumn()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_transaction">DB::rollback()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_variables">DB::$encoding</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryfirstfield">DB::queryFirstField()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_tablelist">DB::tableList()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_special_variables">DB::$ssl</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryonefield">DB::queryOneField()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_columnlist">DB::columnList()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_special_variables">DB::$connect_options</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryfullcolumns">DB::queryFullColumns()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_disconnect">DB::disconnect()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_error_handler">DB::$error_handler</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_queryraw">DB::queryRaw()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_get">DB::get()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_throw_exception_on_error">DB::$throw_exception_on_error</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_insert">DB::insert()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_whereclause">new WhereClause()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_nonsql_error_handler">DB::$nonsql_error_handler</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_insertignore">DB::insertIgnore()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_meekrodb">new MeekroDB()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_throw_exception_on_nonsql_error">DB::$throw_exception_on_nonsql_error</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_insertupdate">DB::insertUpdate()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_verticalslice">DBHelper::verticalSlice()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_success_handler">DB::$success_handler</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_insert">DB::replace()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_reindex">DBHelper::reIndex()</a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_param_char">DB::$param_char</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_update">DB::update()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_usenull">DB::$usenull</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_delete">DB::delete()</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+      </tr>
+    <tr>
+          <td>
+        <a href="http://meekro.com/docs.php#anchor_nested_transactions">DB::$nested_transactions</a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+          <td>
+        <a href="http://meekro.com/docs.php#"></a>
+      </td>
+      </tr>
+  </tbody></table>
+
+<h2 class="alt" id="anchor_variables">Connection Variables</h2>
+<div class="indent">
+  You must specify the username, password, and database name before running any queries. If you don't specify a host,
+  it defaults to localhost. <b>The database connection won't actually be established until the first time
+  you run a query.</b> This means you can set these variables in a globally included setup file, and never worry about
+  actually opening or closing your database connection.
+  <div><div id="highlighter_701679" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$user</code> <code class="php plain">= </code><code class="php string">'my_database_user'</code><code class="php plain">;</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::</code><code class="php variable">$password</code> <code class="php plain">= </code><code class="php string">'my_database_password'</code><code class="php plain">;</code></div><div class="line number3 index2 alt2"><code class="php plain">DB::</code><code class="php variable">$dbName</code> <code class="php plain">= </code><code class="php string">'my_database_name'</code><code class="php plain">;</code></div><div class="line number4 index3 alt1"><code class="php plain">DB::</code><code class="php variable">$host</code> <code class="php plain">= </code><code class="php string">'123.111.10.23'</code><code class="php plain">; </code><code class="php comments">//defaults to localhost if omitted</code></div><div class="line number5 index4 alt2"><code class="php plain">DB::</code><code class="php variable">$port</code> <code class="php plain">= </code><code class="php string">'12345'</code><code class="php plain">; </code><code class="php comments">// defaults to 3306 if omitted</code></div><div class="line number6 index5 alt1"><code class="php plain">DB::</code><code class="php variable">$encoding</code> <code class="php plain">= </code><code class="php string">'utf8'</code><code class="php plain">; </code><code class="php comments">// defaults to latin1 if omitted</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_special_variables">Specialized Connection Variables</h2>
+<div class="indent">
+  MeekroDB gives you access to mysqli's <a href="http://www.php.net//manual/en/mysqli.ssl-set.php">ssl_set</a> and 
+  <a href="http://www.php.net/manual/en/mysqli.options.php">options</a> commands. Primarily, you can
+  connect to MySQL over SSL and configure the connection timeout (default is 30 seconds).
+  <div><div id="highlighter_298931" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$ssl</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">(</code><code class="php string">'key'</code> <code class="php plain">=&gt; </code><code class="php string">''</code><code class="php plain">, </code><code class="php string">'cert'</code> <code class="php plain">=&gt; </code><code class="php string">''</code><code class="php plain">, </code><code class="php string">'ca_cert'</code> <code class="php plain">=&gt; </code><code class="php string">''</code><code class="php plain">, </code><code class="php string">'ca_path'</code> <code class="php plain">=&gt; </code><code class="php string">''</code><code class="php plain">, </code><code class="php string">'cipher'</code> <code class="php plain">=&gt; </code><code class="php string">''</code><code class="php plain">);</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::</code><code class="php variable">$connect_options</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">(MYSQLI_OPT_CONNECT_TIMEOUT =&gt; 10);</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_error_handler">DB::$error_handler</h2>
+<div class="indent">
+  If a query returns an error, MeekroDB will normally print out some debugging information (error, the query
+  it happened on, and a backtrace) and exit. You can change this behavior by setting your own callback function
+  which will get called on errors. You can set this to false if you don't want any function to be called on
+  errors.
+  
+  <br><br><b>Default:</b> Setting this back to true will restore the default error handler.
+  <div><div id="highlighter_714837" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= </code><code class="php string">'my_error_handler'</code><code class="php plain">;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php keyword">function</code> <code class="php plain">my_error_handler(</code><code class="php variable">$params</code><code class="php plain">) {</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Error: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'error'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Query: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">die</code><code class="php plain">; </code><code class="php comments">// don't want to keep going if a query broke</code></div><div class="line number7 index6 alt2"><code class="php plain">}</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="php comments">// this broken query will cause my_error_handler() to run</code></div><div class="line number10 index9 alt1"><code class="php plain">DB::query(</code><code class="php string">"SELCT * FROM accounts"</code><code class="php plain">); </code><code class="php comments">// misspelled SELECT</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="php keyword">class</code> <code class="php plain">Errors {</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">public</code> <code class="php keyword">static</code> <code class="php keyword">function</code> <code class="php plain">static_error_handler(</code><code class="php variable">$params</code><code class="php plain">) {</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Error: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'error'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Query: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php keyword">die</code><code class="php plain">; </code><code class="php comments">// don't want to keep going if a query broke</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;</code>&nbsp;</div><div class="line number19 index18 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">public</code> <code class="php keyword">function</code> <code class="php plain">error_handler(</code><code class="php variable">$params</code><code class="php plain">) {</code></div><div class="line number20 index19 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Error: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'error'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number21 index20 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Query: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number22 index21 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php keyword">die</code><code class="php plain">; </code><code class="php comments">// don't want to keep going if a query broke</code></div><div class="line number23 index22 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number24 index23 alt1"><code class="php plain">}</code></div><div class="line number25 index24 alt2">&nbsp;</div><div class="line number26 index25 alt1"><code class="php comments">// use a static class method as an error handler</code></div><div class="line number27 index26 alt2"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">(</code><code class="php string">'Errors'</code><code class="php plain">, </code><code class="php string">'static_error_handler'</code><code class="php plain">); </code></div><div class="line number28 index27 alt1">&nbsp;</div><div class="line number29 index28 alt2"><code class="php comments">// use an object method as an error handler</code></div><div class="line number30 index29 alt1"><code class="php variable">$my_object</code> <code class="php plain">= </code><code class="php keyword">new</code> <code class="php plain">Errors();</code></div><div class="line number31 index30 alt2"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">(</code><code class="php variable">$my_object</code><code class="php plain">, </code><code class="php string">'error_handler'</code><code class="php plain">);</code></div><div class="line number32 index31 alt1">&nbsp;</div><div class="line number33 index32 alt2"><code class="php comments">//restore default error handler</code></div><div class="line number34 index33 alt1"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= true;</code></div><div class="line number35 index34 alt2">&nbsp;</div><div class="line number36 index35 alt1"><code class="php comments">//ignore errors (BAD IDEA)</code></div><div class="line number37 index36 alt2"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= false;</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_throw_exception_on_error">DB::$throw_exception_on_error</h2>
+<div class="indent">
+  If you set this to true, errors will cause a MeekroDBException to be thrown.
+  <div><div id="highlighter_439935" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= false; </code><code class="php comments">// since we're catching errors, don't need error handler</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::</code><code class="php variable">$throw_exception_on_error</code> <code class="php plain">= true;</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php keyword">try</code> <code class="php plain">{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php comments">// try to insert something with a primary key that already exists</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php comments">// will cause an exception to get thrown, and we'll catch it</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">DB::insert(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'id'</code> <code class="php plain">=&gt; 2, </code><code class="php comments">// duplicate primary key </code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'asd254890s'</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">));</code></div><div class="line number12 index11 alt1"><code class="php plain">} </code><code class="php keyword">catch</code><code class="php plain">(MeekroDBException </code><code class="php variable">$e</code><code class="php plain">) {</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Error: "</code> <code class="php plain">. </code><code class="php variable">$e</code><code class="php plain">-&gt;getMessage() . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">; </code><code class="php comments">// something about duplicate keys</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"SQL Query: "</code> <code class="php plain">. </code><code class="php variable">$e</code><code class="php plain">-&gt;getQuery() . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">; </code><code class="php comments">// INSERT INTO accounts...</code></div><div class="line number15 index14 alt2"><code class="php plain">}</code></div><div class="line number16 index15 alt1">&nbsp;</div><div class="line number17 index16 alt2"><code class="php comments">// restore default error handling behavior</code></div><div class="line number18 index17 alt1"><code class="php comments">// don't throw any more exceptions, and die on errors</code></div><div class="line number19 index18 alt2"><code class="php plain">DB::</code><code class="php variable">$error_handler</code> <code class="php plain">= </code><code class="php string">'meekrodb_error_handler'</code><code class="php plain">;</code></div><div class="line number20 index19 alt1"><code class="php plain">DB::</code><code class="php variable">$throw_exception_on_error</code> <code class="php plain">= false;</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_nonsql_error_handler">DB::$nonsql_error_handler</h2>
+<div class="indent">
+  Works just like DB::$error_handler, except it gets triggered on non-SQL errors. For example,
+  this will be run to alert you if you mess up the MeekroDB syntax, or if you can't connect
+  to the MySQL server.
+  
+  <br><br><b>Default:</b> null (for the default nonsql error handler)
+</div>
+
+<h2 class="alt" id="anchor_throw_exception_on_nonsql_error">DB::$throw_exception_on_nonsql_error</h2>
+<div class="indent">
+  Works just like DB::$throw_exception_on_error, except it gets triggered on non-SQL errors. For example,
+  this will be run to alert you if you mess up the MeekroDB syntax, or if you can't connect
+  to the MySQL server.
+  
+  <br><br><b>Default:</b> false (don't throw exceptions, instead use the nonsql error handler)
+</div>
+
+<h2 class="alt" id="anchor_success_handler">DB::$success_handler</h2>
+<div class="indent">
+  If set to true, the system will echo a report after each query with the query string and how long it took to run.
+  You can also set a custom function or class method that will run after every command.
+  
+  <div><div id="highlighter_65105" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$success_handler</code> <code class="php plain">= true; </code><code class="php comments">// echo out each SQL command being run, and the runtime</code></div><div class="line number2 index1 alt1"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts WHERE password=%s"</code><code class="php plain">, </code><code class="php string">'hello'</code><code class="php plain">); </code><code class="php comments">// some command</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php plain">DB::</code><code class="php variable">$success_handler</code> <code class="php plain">= </code><code class="php string">'my_success_handler'</code><code class="php plain">; </code><code class="php comments">// run this function after each successful command</code></div><div class="line number5 index4 alt2"><code class="php keyword">function</code> <code class="php plain">my_success_handler(</code><code class="php variable">$params</code><code class="php plain">) {</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Command: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Time To Run It: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'runtime'</code><code class="php plain">] . </code><code class="php string">" (milliseconds)&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number8 index7 alt1"><code class="php plain">}</code></div><div class="line number9 index8 alt2"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts"</code><code class="php plain">); </code><code class="php comments">// some command</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="php keyword">class</code> <code class="php plain">Success {</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">public</code> <code class="php keyword">static</code> <code class="php keyword">function</code> <code class="php plain">static_success_handler() {</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Command: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Time To Run It: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'runtime'</code><code class="php plain">] . </code><code class="php string">" (milliseconds)&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;</code>&nbsp;</div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">public</code> <code class="php keyword">function</code> <code class="php plain">success_handler() {</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Command: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number19 index18 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Time To Run It: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'runtime'</code><code class="php plain">] . </code><code class="php string">" (milliseconds)&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number20 index19 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number21 index20 alt2"><code class="php plain">}</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="php comments">// use a static class method as an success handler</code></div><div class="line number24 index23 alt1"><code class="php plain">DB::</code><code class="php variable">$success_handler</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">(</code><code class="php string">'Success'</code><code class="php plain">, </code><code class="php string">'static_success_handler'</code><code class="php plain">); </code></div><div class="line number25 index24 alt2">&nbsp;</div><div class="line number26 index25 alt1"><code class="php comments">// use an object method as an success handler</code></div><div class="line number27 index26 alt2"><code class="php variable">$my_object</code> <code class="php plain">= </code><code class="php keyword">new</code> <code class="php plain">Success();</code></div><div class="line number28 index27 alt1"><code class="php plain">DB::</code><code class="php variable">$success_handler</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">(</code><code class="php variable">$my_object</code><code class="php plain">, </code><code class="php string">'success_handler'</code><code class="php plain">);</code></div><div class="line number29 index28 alt2">&nbsp;</div><div class="line number30 index29 alt1"><code class="php plain">DB::</code><code class="php variable">$success_handler</code> <code class="php plain">= false; </code><code class="php comments">// disable success handler</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_param_char">DB::$param_char</h2>
+<div class="indent">
+  Set this to the character or string that will preceed query parameters. The default is '%'.
+  <div><div id="highlighter_765749" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// don't want the DATE_FORMAT string to be evaluated by MeekroDB</code></div><div class="line number2 index1 alt1"><code class="php comments">// pass it directly to MySQL as written instead, and use ##i to refer</code></div><div class="line number3 index2 alt2"><code class="php comments">// to the MeekroDB 'integer' (which is normally %i)</code></div><div class="line number4 index3 alt1"><code class="php plain">DB::</code><code class="php variable">$param_char</code> <code class="php plain">= </code><code class="php string">'##'</code><code class="php plain">;</code></div><div class="line number5 index4 alt2"><code class="php variable">$row</code> <code class="php plain">= DB::queryFirstRow( "SELECT DATE_FORMAT( c.sent, </code><code class="php string">'%b %d %h:%i %p'</code> <code class="php plain">) </code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">FROM `call` c WHERE pk=##i", 4 );</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="php plain">DB::</code><code class="php variable">$param_char</code> <code class="php plain">= </code><code class="php string">'%'</code><code class="php plain">; </code><code class="php comments">// revert to normal behavior</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_usenull">DB::$usenull</h2>
+<div class="indent">
+  Set this to <tt>false</tt> to have insert/replace/update/delete replace null variables with empty string.
+  <br>Use this if your MySQL columns are set as NOT NULL. Defaults to <tt>true</tt>.
+  <div><div id="highlighter_437579" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$usenull</code> <code class="php plain">= false;</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::insert(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; null </code><code class="php comments">// will be set to empty string</code></div><div class="line number5 index4 alt2"><code class="php plain">));</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_nested_transactions">DB::$nested_transactions (MySQL 5.5 only)</h2>
+<div class="indent">
+  Set to <tt>true</tt> to enable nested transactions (it is disabled by default). 
+  You can then use <tt>DB::startTransaction()</tt>
+  from within a transaction to start another one. This relies internally on 
+  <a href="http://dev.mysql.com/doc/refman/5.5/en/savepoint.html">MySQL SAVEPOINT</a>.
+  <div><div id="highlighter_711246" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$nested_transactions</code> <code class="php plain">= true;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php variable">$depth</code> <code class="php plain">= DB::startTransaction();</code></div><div class="line number4 index3 alt1"><code class="php functions">echo</code> <code class="php string">"We are now "</code> <code class="php plain">. </code><code class="php variable">$depth</code> <code class="php plain">. </code><code class="php string">" transactions deep.\n"</code><code class="php plain">; </code><code class="php comments">// 1</code></div><div class="line number5 index4 alt2"><code class="php plain">DB::query(</code><code class="php string">"UPDATE accounts SET weight=%i WHERE username=%s"</code><code class="php plain">, 150, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="php variable">$depth</code> <code class="php plain">= DB::startTransaction();</code></div><div class="line number8 index7 alt1"><code class="php functions">echo</code> <code class="php string">"We are now "</code> <code class="php plain">. </code><code class="php variable">$depth</code> <code class="php plain">. </code><code class="php string">" transactions deep.\n"</code><code class="php plain">; </code><code class="php comments">// 2</code></div><div class="line number9 index8 alt2"><code class="php plain">DB::query(</code><code class="php string">"UPDATE accounts SET weight=%i WHERE username=%s"</code><code class="php plain">, 160, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number10 index9 alt1"><code class="php variable">$depth</code> <code class="php plain">= DB::rollback(); </code><code class="php comments">// rollback just the inner transaction</code></div><div class="line number11 index10 alt2"><code class="php functions">echo</code> <code class="php string">"We are now "</code> <code class="php plain">. </code><code class="php variable">$depth</code> <code class="php plain">. </code><code class="php string">" transactions deep.\n"</code><code class="php plain">; </code><code class="php comments">// 1</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="php variable">$depth</code> <code class="php plain">= DB::commit(); </code><code class="php comments">// commit the outer transaction</code></div><div class="line number14 index13 alt1"><code class="php functions">echo</code> <code class="php string">"We are now "</code> <code class="php plain">. </code><code class="php variable">$depth</code> <code class="php plain">. </code><code class="php string">" transactions deep.\n"</code><code class="php plain">; </code><code class="php comments">// 0</code></div><div class="line number15 index14 alt2">&nbsp;</div><div class="line number16 index15 alt1"><code class="php variable">$weight</code> <code class="php plain">= DB::queryFirstField(</code><code class="php string">"SELECT weight FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number17 index16 alt2"><code class="php functions">echo</code> <code class="php string">"Joe's weight is "</code> <code class="php plain">. </code><code class="php variable">$weight</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">; </code><code class="php comments">// 150</code></div></div></td></tr></tbody></table></div></div>
+  
+  You can check how many transactions are open by calling <tt>DB::transactionDepth()</tt>, or
+  checking return values from <tt>DB::startTransaction()</tt>, <tt>DB::commit()</tt>, and <tt>DB::rollback()</tt>.
+  <div><div id="highlighter_825830" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$nested_transactions</code> <code class="php plain">= true;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php plain">DB::startTransaction();</code></div><div class="line number4 index3 alt1"><code class="php variable">$depth</code> <code class="php plain">= DB::startTransaction();</code></div><div class="line number5 index4 alt2"><code class="php comments">// $depth is 2</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="php variable">$depth</code> <code class="php plain">= DB::transactionDepth();</code></div><div class="line number8 index7 alt1"><code class="php comments">// $depth is still 2</code></div></div></td></tr></tbody></table></div></div>
+  
+  You can rollback or commit all active transactions by passing <tt>true</tt> to 
+  <tt>DB::commit()</tt> or <tt>DB::rollback()</tt>.
+  <div><div id="highlighter_746914" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$nested_transactions</code> <code class="php plain">= true;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php plain">DB::startTransaction();</code></div><div class="line number4 index3 alt1"><code class="php plain">DB::startTransaction();</code></div><div class="line number5 index4 alt2"><code class="php variable">$depth</code> <code class="php plain">= DB::transactionDepth(); </code><code class="php comments">// $depth is 2</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="php plain">DB::commit(true);</code></div><div class="line number8 index7 alt1"><code class="php variable">$depth</code> <code class="php plain">= DB::transactionDepth(); </code><code class="php comments">// $depth is 0</code></div></div></td></tr></tbody></table></div></div>
+  
+</div>
+
+<h2 class="alt" id="anchor_query">DB::query()</h2>
+<div class="indent">
+  The first parameter is a query string with placeholders variables. Following that, you must have an additional parameter
+  for every placeholder variable.
+  
+  <br><br>If you need to refer to a specific parameter, rather than just getting them in the order that they were passed in,
+  you can put a number after the placeholder. The first parameter passed will have number 0. You can even re-use the same
+  parameter multiple times!
+  
+  <br><br>You can also pass in an array of named parameters. These will be accessed through placeholders of the form
+  <tt>%s_somename</tt>, <tt>%i_somenumber</tt>, and the like.
+  
+  <br><br>The <tt>%?</tt> variable is unique, since it will figure out what to do from the data type. Strings, integers, and doubles
+  will be escaped appropriately. Arrays will be transformed into lists that you can use with MySQL's <tt>IN</tt>. Arrays of arrays
+  will become comma-separated () lists that can be used to INSERT multiple rows at once. Associative arrays will become lists of
+  the form <tt>`key1`='val1',`key2`='val2'</tt> that can be used with MySQL's UPDATE. 
+  
+  <table>
+    <tbody><tr>
+      <th colspan="2">Placeholder Variables</th>
+    </tr>
+    <tr><td>%s</td><td>string</td></tr>
+    <tr><td>%i</td><td>integer</td></tr>
+    <tr><td>%d</td><td>decimal/double</td></tr>
+    <tr><td>%t</td><td>timestamp (can be instance of <a href="http://php.net/manual/en/class.datetime.php">DateTime</a> or string accepted by <a href="http://php.net/manual/en/function.strtotime.php">strtotime</a>)</td></tr>
+    <tr><td>%?</td><td>any data type (including arrays) -- will automatically do the right thing</td></tr>
+    <tr><td>%ss</td><td>search string (string surrounded with % for use with LIKE)</td></tr>
+    <tr style="color: red;"><td>%b</td><td>backticks (can be dangerous with user-supplied data -- BE CAREFUL)</td></tr>
+    <tr style="color: red;"><td>%l</td><td>literal (no escaping or parsing of any kind -- BE CAREFUL)</td></tr>
+    
+    <tr><td>%ls</td><td>list of strings (array)</td></tr>
+    <tr><td>%li</td><td>list of integers</td></tr>
+    <tr><td>%ld</td><td>list of decimals/doubles</td></tr>
+    <tr><td>%lt</td><td>list of timestamps</td></tr>
+    <tr style="color: red;"><td>%lb</td><td>list of backticks (can be dangerous with user-supplied data -- BE CAREFUL)</td></tr>
+    <tr style="color: red;"><td>%ll</td><td>list of literals (no escaping or parsing of any kind -- BE CAREFUL)</td></tr>
+  </tbody></table>
+  
+  <b>Return:</b> Returns an array of associative arrays. If your query produced no results, you get an empty array.
+  
+  <div><div id="highlighter_878652" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div><div class="line number38 index37 alt1">38</div><div class="line number39 index38 alt2">39</div><div class="line number40 index39 alt1">40</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// no placeholders</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::query(</code><code class="php string">"SELECT * FROM tbl"</code><code class="php plain">);</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php comments">// string, integer, and decimal placeholders</code></div><div class="line number5 index4 alt2"><code class="php plain">DB::query(</code><code class="php string">"SELECT * FROM tbl WHERE name=%s AND age &gt; %i AND height &lt;= %d"</code><code class="php plain">, </code><code class="php variable">$name</code><code class="php plain">, 15, 13.75);</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="php comments">// use the parameter number to refer to parameters out of order</code></div><div class="line number8 index7 alt1"><code class="php plain">DB::query(</code><code class="php string">"SELECT * FROM tbl WHERE name=%s2 AND age &gt; %i0 AND height &lt;= %d1"</code><code class="php plain">, 15, 13.75, </code><code class="php variable">$name</code><code class="php plain">);</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="php comments">// use named parameters</code></div><div class="line number11 index10 alt2"><code class="php plain">DB::query(</code><code class="php string">"SELECT * FROM tbl WHERE name=%s_name AND age &gt; %i_age AND height &lt;= %d_height"</code><code class="php plain">, </code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'name'</code> <code class="php plain">=&gt; </code><code class="php variable">$name</code><code class="php plain">,</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'age'</code> <code class="php plain">=&gt; 15,</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'height'</code> <code class="php plain">=&gt; 13.75</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">)</code></div><div class="line number17 index16 alt2"><code class="php plain">);</code></div><div class="line number18 index17 alt1">&nbsp;</div><div class="line number19 index18 alt2"><code class="php comments">// use %b and %? to construct an UPDATE</code></div><div class="line number20 index19 alt1"><code class="php comments">// also use timestamp -- you can do this with the %t parameter, too</code></div><div class="line number21 index20 alt2"><code class="php plain">DB::query(</code><code class="php string">"UPDATE %b0 SET %?2 WHERE id=%i1"</code><code class="php plain">, </code><code class="php string">'tbl'</code><code class="php plain">, 5, </code></div><div class="line number22 index21 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number23 index22 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'age'</code> <code class="php plain">=&gt; 7,</code></div><div class="line number24 index23 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'name'</code> <code class="php plain">=&gt; </code><code class="php variable">$name</code><code class="php plain">,</code></div><div class="line number25 index24 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'timestamp'</code> <code class="php plain">=&gt; </code><code class="php keyword">new</code> <code class="php plain">DateTime(</code><code class="php string">"now"</code><code class="php plain">)</code></div><div class="line number26 index25 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">)</code></div><div class="line number27 index26 alt2"><code class="php plain">);</code></div><div class="line number28 index27 alt1">&nbsp;</div><div class="line number29 index28 alt2"><code class="php comments">// list of strings and list of integers placeholders</code></div><div class="line number30 index29 alt1"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM tbl WHERE name IN %ls AND age NOT IN %li"</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code><code class="php string">'John'</code><code class="php plain">, </code><code class="php string">'Bob'</code><code class="php plain">), </code><code class="php keyword">array</code><code class="php plain">(12, 15));</code></div><div class="line number31 index30 alt2">&nbsp;</div><div class="line number32 index31 alt1"><code class="php comments">// using the results from the last query</code></div><div class="line number33 index32 alt2"><code class="php comments">// you get an array of associative arrays, so you can interate over the rows</code></div><div class="line number34 index33 alt1"><code class="php comments">// with foreach</code></div><div class="line number35 index34 alt2"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$results</code> <code class="php keyword">as</code> <code class="php variable">$row</code><code class="php plain">) {</code></div><div class="line number36 index35 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Name: "</code> <code class="php plain">. </code><code class="php variable">$row</code><code class="php plain">[</code><code class="php string">'name'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">;</code></div><div class="line number37 index36 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Age: "</code> <code class="php plain">. </code><code class="php variable">$row</code><code class="php plain">[</code><code class="php string">'age'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">;</code></div><div class="line number38 index37 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Height: "</code> <code class="php plain">. </code><code class="php variable">$row</code><code class="php plain">[</code><code class="php string">'height'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">;</code></div><div class="line number39 index38 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"-------------\n"</code><code class="php plain">;</code></div><div class="line number40 index39 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_queryfirstrow">DB::queryFirstRow()</h2>
+<div class="indent">
+  Retrieve the first row of results for the query, and return it as an associative array. If the query returned no rows,
+  this returns null.
+  
+  <div><div id="highlighter_208194" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// get information on the account with the username Joe</code></div><div class="line number2 index1 alt1"><code class="php variable">$account</code> <code class="php plain">= DB::queryFirstRow(</code><code class="php string">"SELECT * FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php functions">echo</code> <code class="php string">"Username: "</code> <code class="php plain">. </code><code class="php variable">$account</code><code class="php plain">[</code><code class="php string">'username'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">; </code><code class="php comments">// will be Joe, obviously</code></div><div class="line number4 index3 alt1"><code class="php functions">echo</code> <code class="php string">"Password: "</code> <code class="php plain">. </code><code class="php variable">$account</code><code class="php plain">[</code><code class="php string">'password'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_queryfirstlist">DB::queryFirstList()</h2>
+<div class="indent">
+  Retrieve the first row of results for the query, and return it as a numbered index (non-associative) array.
+  If the query returned no rows, this returns null.
+  
+  <div><div id="highlighter_923983" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// get information on the account with the username Joe</code></div><div class="line number2 index1 alt1"><code class="php plain">list(</code><code class="php variable">$username</code><code class="php plain">, </code><code class="php variable">$password</code><code class="php plain">) = DB::queryFirstList(</code><code class="php string">"SELECT username, password FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php functions">echo</code> <code class="php string">"Username: "</code> <code class="php plain">. </code><code class="php variable">$username</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">; </code><code class="php comments">// will be Joe, obviously</code></div><div class="line number4 index3 alt1"><code class="php functions">echo</code> <code class="php string">"Password: "</code> <code class="php plain">. </code><code class="php variable">$password</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_queryfirstcolumn">DB::queryFirstColumn()</h2>
+<div class="indent">
+  Retrieve the first column of results for the query, and return it as a regular array. If the query returned no rows,
+  this returns an empty array.
+  
+  <div><div id="highlighter_429531" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// get a list of DISTINCT usernames in the accounts table (skip duplicates, if any)</code></div><div class="line number2 index1 alt1"><code class="php variable">$usernames</code> <code class="php plain">= DB::queryFirstColumn(</code><code class="php string">"SELECT DISTINCT username FROM accounts"</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$usernames</code> <code class="php keyword">as</code> <code class="php variable">$username</code><code class="php plain">) {</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Username: "</code> <code class="php plain">. </code><code class="php variable">$username</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">;</code></div><div class="line number5 index4 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_queryonecolumn">DB::queryOneColumn()</h2>
+<div class="indent">
+  Retrieve the requested column of results from the query, and return it as a regular array. If the query returned no rows,
+  or the requested column isn't in the result set, this returns an empty array.
+  
+  <div><div id="highlighter_493561" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// get a list of ALL usernames in the accounts table</code></div><div class="line number2 index1 alt1"><code class="php variable">$usernames</code> <code class="php plain">= DB::queryOneColumn(</code><code class="php string">'username'</code><code class="php plain">, </code><code class="php string">"SELECT * FROM accounts"</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$usernames</code> <code class="php keyword">as</code> <code class="php variable">$username</code><code class="php plain">) {</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Username: "</code> <code class="php plain">. </code><code class="php variable">$username</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">;</code></div><div class="line number5 index4 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_queryfirstfield">DB::queryFirstField()</h2>
+<div class="indent">
+  Get the contents of the first field from the first row of results, and return that. If no rows were returned by the query,
+  this returns null.
+  
+  <div><div id="highlighter_744117" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// get Joe's password and print it out </code></div><div class="line number2 index1 alt1"><code class="php variable">$joePassword</code> <code class="php plain">= DB::queryFirstField(</code><code class="php string">"SELECT password FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php functions">echo</code> <code class="php string">"Joe's password is: "</code> <code class="php plain">. </code><code class="php variable">$joePassword</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_queryonefield">DB::queryOneField()</h2>
+<div class="indent">
+  Get the contents of the requested field from the first row of results, and return that. If no rows were returned by the query,
+  this returns null.
+  
+  <div><div id="highlighter_441011" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// get Joe's password and print it out </code></div><div class="line number2 index1 alt1"><code class="php variable">$joePassword</code> <code class="php plain">= DB::queryOneField(</code><code class="php string">'password'</code><code class="php plain">, </code><code class="php string">"SELECT * FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php functions">echo</code> <code class="php string">"Joe's password is: "</code> <code class="php plain">. </code><code class="php variable">$joePassword</code> <code class="php plain">. </code><code class="php string">"\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_queryfullcolumns">DB::queryFullColumns()</h2>
+<div class="indent">
+  Like DB::query(), except the keys for each associative array will be in the form <tt>TableName.ColumnName</tt>. Useful
+  if you're joining several tables, and they each have an id field.
+  
+  <div><div id="highlighter_606396" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$joe</code> <code class="php plain">= DB::queryFullColumns(</code><code class="php string">"SELECT * FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number2 index1 alt1"><code class="php plain">print_r(</code><code class="php variable">$joe</code><code class="php plain">);</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php comments">/*</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php comments">Returns something like:</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php comments">Array</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php comments">(</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php comments">[accounts.id] =&gt; 3</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php comments">[accounts.username] =&gt; Joe</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php comments">[accounts.password] =&gt; whatever</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php comments">)</code></div><div class="line number12 index11 alt1"><code class="php comments">*/</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_queryraw">DB::queryRaw()</h2>
+<div class="indent">
+  Like DB::query(), except it returns a standard MySQLi_Result object instead of an array of associative arrays. This is intended
+  for situations where the result set is huge, and PHP's memory is not enough to store the whole thing all at once.
+  
+  <div><div id="highlighter_229851" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$mysqli_result</code> <code class="php plain">= DB::queryRaw(</code><code class="php string">"SELECT * FROM accounts WHERE username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number2 index1 alt1"><code class="php variable">$row</code> <code class="php plain">= </code><code class="php variable">$mysqli_result</code><code class="php plain">-&gt;fetch_assoc();</code></div><div class="line number3 index2 alt2"><code class="php functions">echo</code> <code class="php string">"Joe's password is: "</code> <code class="php plain">. </code><code class="php variable">$row</code><code class="php plain">['password'] . </code><code class="php string">"\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_insert">DB::insert() / DB::replace()</h2>
+<div class="indent">
+  Either INSERT or REPLACE a row into a table. You can use DB::sqleval() to force
+  something to be passed directly to MySQL and not escaped. <i>DB::sqleval() does
+  nothing on its own, outside of the insert/replace/update/delete commands.</i>
+  
+  <br>You may insert multiple rows at once by passing an array of associative arrays.
+  
+  <div><div id="highlighter_238640" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// insert a new account</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::insert(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code></div><div class="line number5 index4 alt2"><code class="php plain">));</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="php comments">// change Joe's password (assuming username is a primary key)</code></div><div class="line number8 index7 alt1"><code class="php plain">DB::replace(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'asd254890s'</code></div><div class="line number11 index10 alt2"><code class="php plain">));</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="php comments">// use DB::sqleval() to pass things directly to MySQL</code></div><div class="line number14 index13 alt1"><code class="php comments">// sqleval() supports the same parameter structure as query()</code></div><div class="line number15 index14 alt2"><code class="php plain">DB::insert(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code><code class="php plain">,</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'data'</code> <code class="php plain">=&gt; DB::sqleval(</code><code class="php string">"REPEAT('blah', %i)"</code><code class="php plain">, 4), </code><code class="php comments">// REPEAT() is evaluated by MySQL</code></div><div class="line number19 index18 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'time'</code> <code class="php plain">=&gt; DB::sqleval(</code><code class="php string">"NOW()"</code><code class="php plain">) </code><code class="php comments">// NOW() is evaluated by MySQL</code></div><div class="line number20 index19 alt1"><code class="php plain">));</code></div><div class="line number21 index20 alt2">&nbsp;</div><div class="line number22 index21 alt1"><code class="php comments">// insert two rows at once</code></div><div class="line number23 index22 alt2"><code class="php variable">$rows</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">();</code></div><div class="line number24 index23 alt1"><code class="php variable">$rows</code><code class="php plain">[] = </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number25 index24 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Frankie'</code><code class="php plain">,</code></div><div class="line number26 index25 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'abc'</code></div><div class="line number27 index26 alt2"><code class="php plain">);</code></div><div class="line number28 index27 alt1"><code class="php variable">$rows</code><code class="php plain">[] = </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number29 index28 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Bob'</code><code class="php plain">,</code></div><div class="line number30 index29 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'def'</code></div><div class="line number31 index30 alt2"><code class="php plain">);</code></div><div class="line number32 index31 alt1"><code class="php plain">DB::insert(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php variable">$rows</code><code class="php plain">);</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_insertignore">DB::insertIgnore()</h2>
+<div class="indent">
+  Works like INSERT, except it does an INSERT IGNORE statement. Won't give a MySQL error if the primary key
+  is already taken.
+  
+  <div><div id="highlighter_601841" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// insert new account, don't throw an error if primary key id is already taken</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::insertIgnore(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'id'</code> <code class="php plain">=&gt; 5, </code><code class="php comments">//primary key</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code></div><div class="line number6 index5 alt1"><code class="php plain">));</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_insertupdate">DB::insertUpdate()</h2>
+<div class="indent">
+  Similar to INSERT, except it does an 
+  <a href="http://dev.mysql.com/doc/refman/5.0/en/insert-on-duplicate.html">INSERT ... ON DUPLICATE KEY UPDATE</a>. 
+  After the usual insert syntax, you can specify one
+  of three things: a query-like string with the update component, a second associative array with the keys and values to update,
+  or nothing, in which case the INSERT associative array gets re-used.
+  
+  <div><div id="highlighter_189617" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// insert new account, if id 5 is already taken</code></div><div class="line number2 index1 alt1"><code class="php comments">// then change Joe's password to goodbye instead</code></div><div class="line number3 index2 alt2"><code class="php plain">DB::insertUpdate(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'id'</code> <code class="php plain">=&gt; 5, </code><code class="php comments">//primary key</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code></div><div class="line number7 index6 alt2"><code class="php plain">), </code><code class="php string">'password=%s'</code><code class="php plain">, </code><code class="php string">'goodbye'</code><code class="php plain">);</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="php comments">// same as above</code></div><div class="line number10 index9 alt1"><code class="php plain">DB::insertUpdate(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'id'</code> <code class="php plain">=&gt; 5, </code><code class="php comments">//primary key</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code></div><div class="line number14 index13 alt1"><code class="php plain">), </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'goodbye'</code></div><div class="line number16 index15 alt1"><code class="php plain">));</code></div><div class="line number17 index16 alt2">&nbsp;</div><div class="line number18 index17 alt1"><code class="php comments">// insert new account, if id 5 is taken then the username and password fields</code></div><div class="line number19 index18 alt2"><code class="php comments">// will be set to 'Joe' and 'hello' respectively and all other fields ignored</code></div><div class="line number20 index19 alt1"><code class="php comments">// this is a bit like REPLACE INTO, except we leave any other columns in the table</code></div><div class="line number21 index20 alt2"><code class="php comments">// untouched</code></div><div class="line number22 index21 alt1"><code class="php plain">DB::insertUpdate(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number23 index22 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'id'</code> <code class="php plain">=&gt; 5, </code><code class="php comments">//primary key</code></div><div class="line number24 index23 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number25 index24 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code></div><div class="line number26 index25 alt1"><code class="php plain">));</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_update">DB::update()</h2>
+<div class="indent">
+  Run an UPDATE command by specifying an array of changes to make, and a WHERE component. The WHERE component
+  can have parameters in the same style as the query() command. As with insert() and replace(), you can use
+  DB::sqleval() to pass a function directly to MySQL for evaluation.
+  
+  <div><div id="highlighter_756579" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// change Joe's password</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::update(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'sdfdd'</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">), </code><code class="php string">"username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="php comments">// set Joe's password to "joejoejoe"</code></div><div class="line number7 index6 alt2"><code class="php comments">// WARNING: Passing user-submitted data to sqleval() will probably create a security flaw!!</code></div><div class="line number8 index7 alt1"><code class="php plain">DB::update(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; DB::sqleval(</code><code class="php string">"REPEAT('joe', 3)"</code><code class="php plain">)</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">), </code><code class="php string">"username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_delete">DB::delete()</h2>
+<div class="indent">
+  Run the MySQL DELETE command with the given WHERE conditions.
+  
+  <div><div id="highlighter_127146" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// delete Joe's account</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::</code><code class="php functions">delete</code><code class="php plain">(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php string">"username=%s"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_insertid">DB::insertId()</h2>
+<div class="indent">
+  Returns the auto incrementing ID for the last insert statement. 
+  The insert could have been done through DB::insert() or DB::query().
+  
+  <div><div id="highlighter_474391" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// insert a new account</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::insert(</code><code class="php string">'accounts'</code><code class="php plain">, </code><code class="php keyword">array</code><code class="php plain">(</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'id'</code> <code class="php plain">=&gt; 0, </code><code class="php comments">// auto incrementing column</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'username'</code> <code class="php plain">=&gt; </code><code class="php string">'Joe'</code><code class="php plain">,</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'password'</code> <code class="php plain">=&gt; </code><code class="php string">'hello'</code></div><div class="line number6 index5 alt1"><code class="php plain">));</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="php variable">$joe_id</code> <code class="php plain">= DB::insertId(); </code><code class="php comments">// which id did it choose?!? tell me!!</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_count">DB::count()</h2>
+<div class="indent">
+Counts the number of rows returned by the last query. Ignores queries done with DB::queryFirstRow() and DB::queryFirstField().
+
+  <div><div id="highlighter_115268" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::query(</code><code class="php string">"SELECT * FROM accounts WHERE password=%s"</code><code class="php plain">, </code><code class="php string">'hello'</code><code class="php plain">);</code></div><div class="line number2 index1 alt1"><code class="php variable">$counter</code> <code class="php plain">= DB::</code><code class="php functions">count</code><code class="php plain">();</code></div><div class="line number3 index2 alt2"><code class="php functions">echo</code> <code class="php variable">$counter</code> <code class="php plain">. </code><code class="php string">" people are using hello as their password!!\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_affectedrows">DB::affectedRows()</h2>
+<div class="indent">
+  Returns the number of rows changed by the last update statement. That statement could have been run through
+  DB::update() or DB::query().
+  
+  <div><div id="highlighter_356534" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// give a better password to everyone who is using hello as their password</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::query(</code><code class="php string">"UPDATE accounts SET password=%s WHERE password=%s"</code><code class="php plain">, </code><code class="php string">'sdfwsert4rt'</code><code class="php plain">, </code><code class="php string">'hello'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php variable">$counter</code> <code class="php plain">= DB::affectedRows();</code></div><div class="line number4 index3 alt1"><code class="php functions">echo</code> <code class="php variable">$counter</code> <code class="php plain">. </code><code class="php string">" people just got their password changed!!\n"</code><code class="php plain">;</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_debugmode">DB::debugMode()</h2>
+<div class="indent">
+  An alias for <a href="http://meekro.com/docs.php#anchor_success_handler">DB::$success_handler</a>.
+  
+  <div><div id="highlighter_116274" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::debugMode(); </code><code class="php comments">// echo out each SQL command being run, and the runtime</code></div><div class="line number2 index1 alt1"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts WHERE password=%s"</code><code class="php plain">, </code><code class="php string">'hello'</code><code class="php plain">); </code><code class="php comments">// some command</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php plain">DB::debugMode(</code><code class="php string">'my_debugmode_handler'</code><code class="php plain">); </code><code class="php comments">// run this function after each successful command</code></div><div class="line number5 index4 alt2"><code class="php keyword">function</code> <code class="php plain">my_debugmode_handler(</code><code class="php variable">$params</code><code class="php plain">) {</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Command: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'query'</code><code class="php plain">] . </code><code class="php string">"&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Time To Run It: "</code> <code class="php plain">. </code><code class="php variable">$params</code><code class="php plain">[</code><code class="php string">'runtime'</code><code class="php plain">] . </code><code class="php string">" (milliseconds)&lt;br&gt;\n"</code><code class="php plain">;</code></div><div class="line number8 index7 alt1"><code class="php plain">}</code></div><div class="line number9 index8 alt2"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts"</code><code class="php plain">); </code><code class="php comments">// some command</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="php plain">DB::debugMode(false); </code><code class="php comments">// disable debug mode</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_usedb">DB::useDB()</h2>
+<div class="indent">
+  Switch to a different database.
+  
+  <div><div id="highlighter_481760" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::useDB(</code><code class="php string">'my_other_database'</code><code class="php plain">);</code></div><div class="line number2 index1 alt1"><code class="php variable">$result</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM my_table"</code><code class="php plain">);</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_transaction">DB::startTransaction() / DB::commit() / DB::rollback()</h2>
+<div class="indent">
+These are merely shortcuts for the three standard transaction commands: START TRANSACTION, COMMIT, and ROLLBACK.
+<br><br>
+When <a href="http://meekro.com/docs.php#anchor_nested_transactions">DB::$nested_transactions</a> are enabled, these commands
+  can be used to have multiple layered transactions. Otherwise, running <tt>DB::startTransaction()</tt>
+  when a transaction is active will auto-commit that transaction and start a new one.
+  
+  <div><div id="highlighter_993292" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">// give a better password to everyone who is using hello as their password</code></div><div class="line number2 index1 alt1"><code class="php comments">// but ONLY do this if there are more than 3 such people</code></div><div class="line number3 index2 alt2"><code class="php plain">DB::startTransaction();</code></div><div class="line number4 index3 alt1"><code class="php plain">DB::query(</code><code class="php string">"UPDATE accounts SET password=%s WHERE password=%s"</code><code class="php plain">, </code><code class="php string">'sdfwsert4rt'</code><code class="php plain">, </code><code class="php string">'hello'</code><code class="php plain">);</code></div><div class="line number5 index4 alt2"><code class="php variable">$counter</code> <code class="php plain">= DB::affectedRows();</code></div><div class="line number6 index5 alt1"><code class="php keyword">if</code> <code class="php plain">(</code><code class="php variable">$counter</code> <code class="php plain">&gt; 3) {</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php variable">$counter</code> <code class="php plain">. </code><code class="php string">" people just got their password changed!!\n"</code><code class="php plain">;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">DB::commit();</code></div><div class="line number9 index8 alt2"><code class="php plain">} </code><code class="php keyword">else</code> <code class="php plain">{</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"No one got their password changed!\n"</code><code class="php plain">;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php plain">DB::rollback();</code></div><div class="line number12 index11 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+  
+  
+
+</div>
+
+<h2 class="alt" id="anchor_tablelist">DB::tableList()</h2>
+<div class="indent">
+  Get an array of the tables in either the current database, or the requested one.
+  
+  <div><div id="highlighter_81512" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$current_db_tables</code> <code class="php plain">= DB::tableList();</code></div><div class="line number2 index1 alt1"><code class="php variable">$other_db_tables</code> <code class="php plain">= DB::tableList(</code><code class="php string">'other_db'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$other_db_tables</code> <code class="php keyword">as</code> <code class="php variable">$table</code><code class="php plain">) {</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Table Name: $table\n"</code><code class="php plain">;</code></div><div class="line number6 index5 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_columnlist">DB::columnList()</h2>
+<div class="indent">
+  Get an array of the columns in the requested table.
+  
+  <div><div id="highlighter_667650" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$columns</code> <code class="php plain">= DB::columnList(</code><code class="php string">'accounts'</code><code class="php plain">);</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$columns</code> <code class="php keyword">as</code> <code class="php variable">$column</code><code class="php plain">) {</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php functions">echo</code> <code class="php string">"Column: $column\n"</code><code class="php plain">;</code></div><div class="line number5 index4 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_disconnect">DB::disconnect()</h2>
+<div class="indent">
+  Drop any existing MySQL connections. If you run a query after this, it will automatically reconnect.
+  <br>Useful before running <a href="http://php.net/manual/en/function.pcntl-fork.php">pcntl_fork()</a>, or if
+  you're trying to conserve MySQL sockets for some weird reason.
+  
+  <div><div id="highlighter_721550" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::disconnect(); </code><code class="php comments">// drop mysqli connection</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_get">DB::get()</h2>
+<div class="indent">
+  Return the underlying mysqli object.
+  
+  <div><div id="highlighter_592402" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$mysqli</code> <code class="php plain">= DB::get();</code></div></div></td></tr></tbody></table></div></div>
+
+</div>
+
+<h2 class="alt" id="anchor_whereclause">new WhereClause()</h2>
+<div class="indent">
+  A helper class for building the WHERE part of an SQL string out of pieces. It has methods
+  <tt>add</tt>, <tt>addClause</tt>, <tt>negateLast</tt>, and <tt>negate</tt>, which are
+  demonstrated below.
+  
+  <div><div id="highlighter_25691" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$where</code> <code class="php plain">= </code><code class="php keyword">new</code> <code class="php plain">WhereClause(</code><code class="php string">'and'</code><code class="php plain">); </code><code class="php comments">// create a WHERE statement of pieces joined by ANDs</code></div><div class="line number2 index1 alt1"><code class="php variable">$where</code><code class="php plain">-&gt;add(</code><code class="php string">'username=%s'</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number3 index2 alt2"><code class="php variable">$where</code><code class="php plain">-&gt;add(</code><code class="php string">'password=%s'</code><code class="php plain">, </code><code class="php string">'mypass'</code><code class="php plain">);</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="php comments">// SELECT * FROM accounts WHERE (`username`='Joe') AND (`password`='mypass')</code></div><div class="line number6 index5 alt1"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts WHERE %l"</code><code class="php plain">, </code><code class="php variable">$where</code><code class="php plain">);</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="php variable">$subclause</code> <code class="php plain">= </code><code class="php variable">$where</code><code class="php plain">-&gt;addClause(</code><code class="php string">'or'</code><code class="php plain">); </code><code class="php comments">// add a sub-clause with ORs</code></div><div class="line number9 index8 alt2"><code class="php variable">$subclause</code><code class="php plain">-&gt;add(</code><code class="php string">'age=%i'</code><code class="php plain">, 15);</code></div><div class="line number10 index9 alt1"><code class="php variable">$subclause</code><code class="php plain">-&gt;add(</code><code class="php string">'age=%i'</code><code class="php plain">, 18);</code></div><div class="line number11 index10 alt2"><code class="php variable">$subclause</code><code class="php plain">-&gt;negateLast(); </code><code class="php comments">// negate the last thing added (age=18)</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="php comments">// SELECT * FROM accounts WHERE (`username`='Joe') AND (`password`='mypass') AND ((`age`=15) OR (NOT(`age`=18)))</code></div><div class="line number14 index13 alt1"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts WHERE %l"</code><code class="php plain">, </code><code class="php variable">$where</code><code class="php plain">);</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;</code>&nbsp;</div><div class="line number16 index15 alt1"><code class="php variable">$subclause</code><code class="php plain">-&gt;negate(); </code><code class="php comments">// negate this entire subclause</code></div><div class="line number17 index16 alt2">&nbsp;</div><div class="line number18 index17 alt1"><code class="php comments">// SELECT * FROM accounts WHERE (`username`='Joe') AND (`password`='mypass') AND (NOT((`age`=15) OR (NOT(`age`=18))))</code></div><div class="line number19 index18 alt2"><code class="php variable">$results</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT * FROM accounts WHERE %l"</code><code class="php plain">, </code><code class="php variable">$where</code><code class="php plain">);</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+
+<h2 class="alt" id="anchor_meekrodb">new MeekroDB()</h2>
+<div class="indent">
+  All MeekroDB functions and variables can also be used in an object-oriented approach. We don't recommend this
+  because most projects don't need multiple database connections, and it's annoying to pass $db objects around all the time.
+  
+  <br><br>The MeekroDB() constructor accepts the parameters <tt>$host, $user, $pass, $dbName, $port, $encoding</tt>. You can omit
+  any or all of them, and any that are omitted will use either the value that was set for the static instance of MeekroDB,
+  or the defaults shown in the <a href="http://meekro.com/docs.php#anchor_variables">standard variables</a> section.
+  
+  <div><div id="highlighter_183166" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">DB::</code><code class="php variable">$user</code> <code class="php plain">= </code><code class="php string">'my_database_user'</code><code class="php plain">; </code><code class="php comments">// configure MeekroDB like normal</code></div><div class="line number2 index1 alt1"><code class="php plain">DB::</code><code class="php variable">$password</code> <code class="php plain">= </code><code class="php string">'my_database_password'</code><code class="php plain">;</code></div><div class="line number3 index2 alt2"><code class="php plain">DB::</code><code class="php variable">$dbName</code> <code class="php plain">= </code><code class="php string">'my_database_name'</code><code class="php plain">;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="php comments">// ... (code passes)</code></div><div class="line number6 index5 alt1"><code class="php variable">$mdb</code> <code class="php plain">= </code><code class="php keyword">new</code> <code class="php plain">MeekroDB(); </code><code class="php comments">// don't need to pass any config parameters</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php comments">// it'll just read them from the above</code></div></div></td></tr></tbody></table></div></div>
+  
+  If you want to configure your object instance of MeekroDB separately, you can. The parameters are the same
+  as described in the <a href="http://meekro.com/docs.php#anchor_variables">standard variables</a> section.
+  <div><div id="highlighter_224025" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$mdb</code> <code class="php plain">= </code><code class="php keyword">new</code> <code class="php plain">MeekroDB(</code><code class="php variable">$host</code><code class="php plain">, </code><code class="php variable">$user</code><code class="php plain">, </code><code class="php variable">$pass</code><code class="php plain">, </code><code class="php variable">$dbName</code><code class="php plain">, </code><code class="php variable">$port</code><code class="php plain">, </code><code class="php variable">$encoding</code><code class="php plain">);</code></div></div></td></tr></tbody></table></div></div>
+  
+  Once connected, you can run all the MeekroDB functions described in the documentation. You can also set all
+  the same parameters.
+  <div><div id="highlighter_27901" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$row</code> <code class="php plain">= </code><code class="php variable">$mdb</code><code class="php plain">-&gt;queryFirstRow(</code><code class="php string">"SELECT name, age FROM tbl WHERE name=%s LIMIT 1"</code><code class="php plain">, </code><code class="php string">'Joe'</code><code class="php plain">);</code></div><div class="line number2 index1 alt1"><code class="php functions">echo</code> <code class="php string">"Name: "</code> <code class="php plain">. </code><code class="php variable">$row</code><code class="php plain">[</code><code class="php string">'name'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">; </code><code class="php comments">// will be Joe, obviously</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="php variable">$mdb</code><code class="php plain">-&gt;param_char = </code><code class="php string">'##'</code><code class="php plain">;</code></div><div class="line number5 index4 alt2"><code class="php variable">$row2</code> <code class="php plain">= </code><code class="php variable">$mdb</code><code class="php plain">-&gt;queryFirstRow(</code><code class="php string">"SELECT name, age FROM tbl WHERE name=##s LIMIT 1"</code><code class="php plain">, </code><code class="php string">'Frank'</code><code class="php plain">);</code></div><div class="line number6 index5 alt1"><code class="php functions">echo</code> <code class="php string">"Name: "</code> <code class="php plain">. </code><code class="php variable">$row2</code><code class="php plain">[</code><code class="php string">'name'</code><code class="php plain">] . </code><code class="php string">"\n"</code><code class="php plain">; </code><code class="php comments">// will be Frank, obviously</code></div></div></td></tr></tbody></table></div></div>
+  
+
+</div>
+
+<h2 class="alt" id="anchor_verticalslice">DBHelper::verticalSlice()</h2>
+<div class="indent">
+  This helper function operates on an array of associative arrays, such as the kind returned by <tt>DB::query()</tt>.
+  It lets you get a simple array of all the values for one column in the original array of associative arrays.
+  
+  <div><div id="highlighter_973631" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$users</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT name, age, address FROM users"</code><code class="php plain">);</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php variable">$names</code> <code class="php plain">= DBHelper::verticalSlice(</code><code class="php variable">$users</code><code class="php plain">, </code><code class="php string">'name'</code><code class="php plain">);</code></div><div class="line number4 index3 alt1"><code class="php comments">// Above line is equivalent to:</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$users</code> <code class="php keyword">as</code> <code class="php variable">$user</code><code class="php plain">) {</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php variable">$names</code><code class="php plain">[] = </code><code class="php variable">$user</code><code class="php plain">[</code><code class="php string">'name'</code><code class="php plain">];</code></div><div class="line number8 index7 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+  
+  It also accepts an optional third parameter, which lets you set keys for the indexes in the new array.
+  <div><div id="highlighter_332159" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$users</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT name, age, address FROM users"</code><code class="php plain">);</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php variable">$ages</code> <code class="php plain">= DBHelper::verticalSlice(</code><code class="php variable">$users</code><code class="php plain">, </code><code class="php string">'age'</code><code class="php plain">, </code><code class="php string">'name'</code><code class="php plain">);</code></div><div class="line number4 index3 alt1"><code class="php comments">// Above line is equivalent to:</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="php variable">$names</code> <code class="php plain">= </code><code class="php keyword">array</code><code class="php plain">();</code></div><div class="line number7 index6 alt2"><code class="php keyword">foreach</code> <code class="php plain">(</code><code class="php variable">$users</code> <code class="php keyword">as</code> <code class="php variable">$user</code><code class="php plain">) {</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;</code><code class="php variable">$names</code><code class="php plain">[</code><code class="php variable">$user</code><code class="php plain">[</code><code class="php string">'name'</code><code class="php plain">]] = </code><code class="php variable">$user</code><code class="php plain">[</code><code class="php string">'age'</code><code class="php plain">];</code></div><div class="line number9 index8 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+<h2 class="alt" id="anchor_reindex">DBHelper::reIndex()</h2>
+<div class="indent">
+  This helper function operates on an array of associative arrays, such as the kind returned by <tt>DB::query()</tt>.
+  It re-formats the array with a column serving as the index.
+  
+  <br><br>In the example below, if there are two people named Frank, only one of them will be included.
+  
+  <div><div id="highlighter_992233" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$users</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT name, age, address FROM users"</code><code class="php plain">);</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php variable">$users_by_name</code> <code class="php plain">= DBHelper::reIndex(</code><code class="php variable">$users</code><code class="php plain">, </code><code class="php string">'name'</code><code class="php plain">);</code></div><div class="line number4 index3 alt1"><code class="php variable">$frank</code> <code class="php plain">= </code><code class="php variable">$users_by_name</code><code class="php plain">[</code><code class="php string">'Frank'</code><code class="php plain">]</code></div><div class="line number5 index4 alt2"><code class="php functions">echo</code> <code class="php string">"Frank's age is "</code> <code class="php plain">. </code><code class="php variable">$frank</code><code class="php plain">['age'] . </code><code class="php string">"\n"</code><code class="php plain">; </code><code class="php comments">// 15</code></div></div></td></tr></tbody></table></div></div>
+  
+  You can index the associative arrays by multiple columns as well.
+  <div><div id="highlighter_782230" class="syntaxhighlighter  php"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php variable">$users</code> <code class="php plain">= DB::query(</code><code class="php string">"SELECT name, age, address FROM users"</code><code class="php plain">);</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php variable">$users_by_name_and_age</code> <code class="php plain">= DBHelper::reIndex(</code><code class="php variable">$users</code><code class="php plain">, </code><code class="php string">'name'</code><code class="php plain">, </code><code class="php string">'age'</code><code class="php plain">);</code></div><div class="line number4 index3 alt1"><code class="php variable">$frank</code> <code class="php plain">= </code><code class="php variable">$users_by_name_and_age</code><code class="php plain">[</code><code class="php string">'Frank'</code><code class="php plain">][</code><code class="php string">'15'</code><code class="php plain">];</code></div><div class="line number5 index4 alt2"><code class="php functions">echo</code> <code class="php string">"Frank's address is "</code> <code class="php plain">. </code><code class="php variable">$frank</code><code class="php plain">['address'] . </code><code class="php string">"\n"</code><code class="php plain">;</code></div><div class="line number6 index5 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div></div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="endcontainer ui-corner-all">
+  <p class="small nomargin">Copyright (C) 2008-2016 ::
+    <script type="text/javascript" language="javascript">
+{ coded = "zDHKflHKAW@fAA0WD.rDf"
+  key = "JOekPIgQ5WoNhydZKCiRfFXA03M2YcwDE6pquLasV19jbT7n4SrUx8vzBtGlHm"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>Email me</a>")
+}
+</script><a href="mailto:postmaster@meekro.com">Email me</a>
+
+    
+  :: <a href="http://www.gnu.org/licenses/lgpl.txt">LGPL v3</a>
+  :: <a href="https://github.com/SergeyTsalkov/meekrodb/commits/master">GitHub Tracker</a>
+</p></div>
+
+
+</body></html>
